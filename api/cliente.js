@@ -1,6 +1,6 @@
 // Função que busca os dados para exibir no html
 const listarClientes = () => {
-    // Acessando servidor
+    // Acessando servidor, por padrão, o fetch  passa um get
     return fetch("http://localhost:4000/clientes")
         .then(resposta => {
             return resposta.json();
